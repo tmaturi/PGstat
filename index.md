@@ -1,10 +1,10 @@
-
-<ul>
-{% for student in site.data.phdstudents %}
-  <li>
-    <a href="https://github.com/{{ student.github }}">
-      {{ student.surname }} {{ student.firstname }} {{ student.nationality }} {{ student.remarks }} 
-    </a>
-  </li>
-{% endfor %}
-</ul>
+<table style="width:100%">
+  {% for student in site.data.phdstudents %}
+  <tr>
+    <th>{{ student.surname }}</th>
+    <th>{{ student.firstname }}</th> 
+    <th>{{ student.nationality }}</th>
+     <th>{{ student.remarks }} </th>
+  </tr>
+  {% endfor %}
+  </table>
