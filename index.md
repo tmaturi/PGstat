@@ -1,4 +1,10 @@
 <table style="width:100%">
+  <tr>
+    <th> Surname </th>
+    <th> Firstname </th> 
+    <th> Nationality</th>
+     <th> Remarks  </th>
+  </tr>
   {% for student in site.data.phdstudents %}
   <tr>
     <th>{{ student.surname }}</th>
